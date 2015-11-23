@@ -1,0 +1,301 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+%\documentclass{bmcart}
+
+%%% Load packages
+\usepackage{amsthm,amsmath}
+\usepackage{siunitx}
+\usepackage{mfirstuc}
+%\RequirePackage{natbib}
+\usepackage[colorinlistoftodos]{todonotes}
+\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+\usepackage[htt]{hyphenat}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\def\includegraphic{}
+%\def\includegraphics{}
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Report from 2015 Brainhack Americas (MX)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Detecting task-based fMRI pursuance using plan abandonment approaches}
+\vskip2ex
+\projectURL{Project URL: \url{https://github.com/brainhack-poa/fmri-plan-recongnition}}
+
+\author[
+addressref={pucrs},
+%
+email={anibalsolon@gmail.com}
+]{\inits{RFP} \fnm{Ramon} \snm{Fraga Pereira}}
+\author[
+addressref={pucrs},
+%
+email={anibalsolon@gmail.com}
+]{\inits{ASH} \fnm{Anibal Sólon} \snm{Heinsfeld}}
+\author[
+addressref={pucrs},
+%
+email={felipe.meneguzzi@pucrs.br}
+]{\inits{FM} \fnm{Felipe} \snm{Meneguzzi}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=pucrs]{%
+  \orgname{Pontifical Catholic University of Rio Grande do Sul},
+  \city{Porto Alegre},
+  \street{Av. Ipiranga, 6681},
+  \postcode{90619-900},
+  \postcode{Rio Grande do Sul},
+  \cny{Brazil}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+\end{artnotes}
+
+%\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{abstractbox}
+
+%\begin{abstract} % abstract
+	
+%Blank Abstract
+
+%\end{abstract}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\vskip1ex
+
+%\projectURL{\url{https://github.com/brainhack-poa/fmri-plan-recongnition}}
+%\projectURL{https://github.com/brainhack-poa/fmri-plan-recongnition}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+%\end{abstractbox}
+%
+\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%{\sffamily\bfseries\fontsize{10}{12}\selectfont Project URL: \url{https://github.com/brainhack-poa/fmri-plan-recongnition}}
+
+%%% Import the body from pandoc formatted text
+\section{Introduction}\label{introduction}
+
+Task-based fMRI is an interesting approach for understand brain
+processes for a given task. However, fMRI images are usually
+preprocessed hours, or even days, after the scan. During preprocssing
+stage, defects in images are detected and, in some cases, can not be
+corrected. For example, technical problems or lack of collaboration from
+the subject to realize the given tasks. For this cases, it is necessary
+to realize a new scan.
+
+\section{Approach}\label{approach}
+
+In this BrainHack project, we aim to detect if the subject is following
+the given task and give an almost real-time feedback to the researchers
+make decisions (e.g.~restart the task), in order to avoid images discard
+or rescans. To do so, we use Automated Planning techniques
+\cite{Sukthankar2014}, an sub-area of Artificial Intelligence. For a
+given fMRI paradigm, a plan should be created and compared with the
+subject's brain activations during scan using recognition methods. In
+order to use plan recognition methods, we need to discretize and
+formalize the fMRI, and construct a expected plan based on the
+hypothesis paradigm using this formalization. To evaluate the pursuance
+of a specific paradigm, we aim to use real-time fMRI method to retrieve
+BOLD signals of brain regions that are supposed to be active in a
+particular time range. By doing so, it is possible to detect if a
+subject is following the paradigm given a specific stimulus type, such
+as visual or auditory stimulus. The brain state of each stimulus type
+will be mapped based on atlas literature. For example, Brodmann areas
+17, 18 and 19 will be mapped to cover visual stimilus with a state
+\emph{visual\_actv}. So, for a paradigm that works with visual stimuli,
+the plan must contain \emph{visual\_actv} for the given time that the
+stimulus occurs.
+
+\section{Discussion}\label{discussion}
+
+The formalization of brain states highly depends on the discretization
+of specific region states, that might vary for each subject. In order to
+normalize the signals, a previous tunning phase is required with simple
+paradigms, depending of which paradigm will be executed. The usage of
+real-time fMRI methods aggregates to our approach, since the tunning and
+pursuance recognition can be made during the exam. In case of fMRI
+paradigm abandonment, the paradigm can be adapted to induce or interest
+the subject in a way that the subject proceed with its tasks, using
+methods such as demonstred by \cite{Dongha2011}.
+
+\section{Conclusions}\label{conclusions}
+
+This project is in its initial phase. Real-time fMRI methods are being
+tested, using AFNI's provided tools. The next step is to formalize basic
+stimuli types based on mapped regions. Using these formalizations,
+paradigms can be converted to plans and it become possible to evaluate
+the participation of a subject during the scan.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{backmatter}
+
+\section*{Availability of Supporting Data}
+More information about this project can be found at: \url{https://github.com/brainhack-poa/fmri-plan-recongnition}. Further data and files supporting this project are hosted in the \emph{GigaScience} repository REFXXX.
+
+\section*{Competing interests}
+None
+
+\section*{Author's contributions}
+RFP and FM develop the project, and RFP, ASH and FM wrote the report.
+
+\section*{Acknowledgements}
+The authors would like to thank the organizers and attendees of
+Brainhack MX and the developers of AFNI.
+
+  
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% if your bibliography is in bibtex format, use those commands:
+\bibliographystyle{bmc-mathphys} % Style BST file
+\bibliography{brainhack-report} % Bibliography file (usually '*.bib' )
+
+\end{backmatter}
+\end{document}
