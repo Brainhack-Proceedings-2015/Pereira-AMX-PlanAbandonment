@@ -1,14 +1,14 @@
 ---
 event: '2015 Brainhack Americas (MX)'
 
-title:  'Detecting task-based fMRI pursuance using plan abandonment approaches'
+title:  'Detecting task-based fMRI compliance using plan abandonment approaches'
 
 author:
 
 - initials: RFP
   surname: Fraga Pereira
   firstname: Ramon
-  email: anibalsolon@gmail.com
+  email: ramon.pereira@acad.pucrs.br
   affiliation: pucrs
 
 - initials: ASH
@@ -59,25 +59,26 @@ gigascience-ref: REFXXX
 ...
 
 #Introduction
-Task-based fMRI is an interesting approach for understand brain processes for a given task.
+Task-based fMRI is a powerful approach to understand brain processes for a certain task.
 However, fMRI images are usually preprocessed hours, or even days, after the scan.
-During preprocessing stage, defects in images are detected and, in some cases, can not be corrected.
-For example, technical problems or lack of collaboration from the subject to realize the given tasks.
+During preprocessing stage, defects in images are detected and, in some cases, cannot be corrected.
+For example, technical problems or lack of collaboration from the subject to perform the given tasks.
 For this cases, it is necessary to realize a new scan.
+In order to mitigate lost scans due to patient non-compliance, we need an approach to detect such non-compliance during the scan.
 
 #Approach
-In this BrainHack project, we aim to detect if the subject is following the given task and give an almost real-time feedback to the researchers make decisions (e.g. restart the task), to avoid images discard or rescans.
+In this BrainHack project, we aim to detect if a subject is following the given task and provide an almost real-time feedback to the researchers make decisions (e.g. restart the task), to avoid images discard or rescans.
 To do so, we use Automated Planning techniques \cite{Sukthankar2014}, a sub-area of Artificial Intelligence.
-For a given fMRI paradigm, a plan should be created and compared with the subject's brain activations during the scan using recognition methods.
+For a given fMRI paradigm, a plan should be created and compared with the subject's brain activation during the scan using recognition methods.
 To use plan recognition methods, we need to discretize and formalize the fMRI and construct a expected plan based on the hypothesis paradigm using this formalization.
-To evaluate the pursuance of a specific paradigm, we aim to use real-time fMRI method to retrieve BOLD signals of brain regions that are supposed to be active in a particular time range.
+To evaluate the compliance with a specific paradigm, we aim to use real-time fMRI method to retrieve BOLD signals of brain regions that are supposed to be active in a particular time range.
 By doing so, it is possible to detect if a subject is following the paradigm given a specific stimulus type, such as visual or auditory stimulus.
 The brain state of each stimulus type will be mapped based on atlas literature.
 For example, Brodmann areas 17, 18 and 19 will be mapped to cover visual stimulus with a state *visual_actv*.
 So, for a paradigm that works with visual stimuli, the plan must contain *visual_actv* for the given time that the stimulus occurs.
 
 #Discussion
-The formalization of brain states highly depends on the discretization of specific region states, which might vary for each subject.
+The formalization of brain states strongly depends on the discretization of specific region states, which might vary for each subject.
 In order to normalize the signals, a previous tunning phase is required with simple paradigms, depending on which paradigm will be executed.
 The usage of real-time fMRI methods aggregates to our approach since the tunning and pursuance recognition can be made during the exam.
 In the case of fMRI paradigm abandonment, the paradigm can be adapted to induce or interest the subject in a way that the subject proceeds with its tasks, using methods such as demonstrated by \cite{Dongha2011}.

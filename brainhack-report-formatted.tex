@@ -100,14 +100,14 @@
 %%                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{Detecting task-based fMRI pursuance using plan abandonment approaches}
+\title{Detecting task-based fMRI compliance using plan abandonment approaches}
 \vskip2ex
 \projectURL{Project URL: \url{https://github.com/brainhack-poa/fmri-plan-recongnition}}
 
 \author[
 addressref={pucrs},
 %
-email={anibalsolon@gmail.com}
+email={ramon.pereira@acad.pucrs.br}
 ]{\inits{RFP} \fnm{Ramon} \snm{Fraga Pereira}}
 \author[
 addressref={pucrs},
@@ -140,7 +140,7 @@ email={augusto.buchweitz@pucrs.br}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \address[id=pucrs]{%
-  \orgname{Pontifical Catholic University of Rio Grande do Sul},
+  \orgname{PUCRS},
   \city{Porto Alegre},
   \street{Av. Ipiranga, 6681},
   \postcode{90619-900},
@@ -214,26 +214,27 @@ email={augusto.buchweitz@pucrs.br}
 %%% Import the body from pandoc formatted text
 \section{Introduction}\label{introduction}
 
-Task-based fMRI is an interesting approach for understand brain
-processes for a given task. However, fMRI images are usually
-preprocessed hours, or even days, after the scan. During preprocessing
-stage, defects in images are detected and, in some cases, can not be
-corrected. For example, technical problems or lack of collaboration from
-the subject to realize the given tasks. For this cases, it is necessary
-to realize a new scan.
+Task-based fMRI is a powerful approach to understand brain processes for
+a certain task. However, fMRI images are usually preprocessed hours, or
+even days, after the scan. During preprocessing stage, defects in images
+are detected and, in some cases, cannot be corrected. For example,
+technical problems or lack of collaboration from the subject to perform
+the given tasks. For this cases, it is necessary to realize a new scan.
+In order to mitigate lost scans due to patient non-compliance, we need
+an approach to detect such non-compliance during the scan.
 
 \section{Approach}\label{approach}
 
-In this BrainHack project, we aim to detect if the subject is following
-the given task and give an almost real-time feedback to the researchers
-make decisions (e.g.~restart the task), to avoid images discard or
-rescans. To do so, we use Automated Planning techniques
+In this BrainHack project, we aim to detect if a subject is following
+the given task and provide an almost real-time feedback to the
+researchers make decisions (e.g.~restart the task), to avoid images
+discard or rescans. To do so, we use Automated Planning techniques
 \cite{Sukthankar2014}, a sub-area of Artificial Intelligence. For a
 given fMRI paradigm, a plan should be created and compared with the
-subject's brain activations during the scan using recognition methods.
-To use plan recognition methods, we need to discretize and formalize the
+subject's brain activation during the scan using recognition methods. To
+use plan recognition methods, we need to discretize and formalize the
 fMRI and construct a expected plan based on the hypothesis paradigm
-using this formalization. To evaluate the pursuance of a specific
+using this formalization. To evaluate the compliance with a specific
 paradigm, we aim to use real-time fMRI method to retrieve BOLD signals
 of brain regions that are supposed to be active in a particular time
 range. By doing so, it is possible to detect if a subject is following
@@ -246,7 +247,7 @@ for a paradigm that works with visual stimuli, the plan must contain
 
 \section{Discussion}\label{discussion}
 
-The formalization of brain states highly depends on the discretization
+The formalization of brain states strongly depends on the discretization
 of specific region states, which might vary for each subject. In order
 to normalize the signals, a previous tunning phase is required with
 simple paradigms, depending on which paradigm will be executed. The
