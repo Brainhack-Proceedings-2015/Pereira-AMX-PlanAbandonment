@@ -38,7 +38,7 @@ author:
 affiliations:
 
 - id: pucrs
-  orgname: 'Pontifical Catholic University of Rio Grande do Sul'
+  orgname: 'PUCRS'
   street: Av. Ipiranga, 6681
   postcode: 90619-900
   city: Porto Alegre
