@@ -1,7 +1,7 @@
 ---
 event: '2015 Brainhack Americas (MX)'
 
-title:  'Detecting task-based fMRI compliance using plan abandonment approaches'
+title:  'Detecting task-based fMRI compliance using plan abandonment techniques'
 
 author:
 
@@ -68,9 +68,9 @@ In order to mitigate lost scans due to patient non-compliance, we need an approa
 
 #Approach
 In this BrainHack project, we aim to detect if a subject is following the given task and provide an almost real-time feedback to the researchers make decisions (e.g. restart the task), to avoid images discard or rescans.
-To do so, we use Automated Planning techniques \cite{Sukthankar2014}, a sub-area of Artificial Intelligence.
+To do so, we use plan abandonment techniques \cite{Sukthankar2014}, a sub-area of Artificial Intelligence.
 For a given fMRI paradigm, a plan should be created and compared with the subject's brain activation during the scan using recognition methods.
-To use plan recognition methods, we need to discretize and formalize the fMRI and construct a expected plan based on the hypothesis paradigm using this formalization.
+To use plan abandonment techniques, we need to discretize and formalize the fMRI and construct a expected plan based on the hypothesis paradigm using this formalization.
 To evaluate the compliance with a specific paradigm, we aim to use real-time fMRI method to retrieve BOLD signals of brain regions that are supposed to be active in a particular time range.
 By doing so, it is possible to detect if a subject is following the paradigm given a specific stimulus type, such as visual or auditory stimulus.
 The brain state of each stimulus type will be mapped based on atlas literature.
@@ -86,5 +86,5 @@ In the case of fMRI paradigm abandonment, the paradigm can be adapted to induce 
 #Conclusions
 This project is in its initial phase.
 Real-time fMRI methods are being tested, using AFNI's provided tools.
-The next step is to formalize basic stimuli types based on mapped regions.
+In order to use plan abandonment techniques, the next step is to formalize basic stimuli types based on mapped regions.
 By using these formalizations, paradigms can be converted to plans and it become possible to evaluate the participation of a subject during the scan.
