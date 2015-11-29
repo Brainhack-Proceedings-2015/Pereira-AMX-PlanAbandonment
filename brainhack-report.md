@@ -17,12 +17,6 @@ author:
   email: anibalsolon@gmail.com
   affiliation: pucrs
 
-- initials: FM
-  surname: Meneguzzi
-  firstname: Felipe
-  email: felipe.meneguzzi@pucrs.br
-  affiliation: pucrs
-
 - initials: ARF
   surname: Rosa Franco
   firstname: Alexandre
@@ -33,6 +27,12 @@ author:
   surname: Buchweitz
   firstname: Augusto
   email: augusto.buchweitz@pucrs.br
+  affiliation: pucrs
+
+- initials: FM
+  surname: Meneguzzi
+  firstname: Felipe
+  email: felipe.meneguzzi@pucrs.br
   affiliation: pucrs
 
 affiliations:
