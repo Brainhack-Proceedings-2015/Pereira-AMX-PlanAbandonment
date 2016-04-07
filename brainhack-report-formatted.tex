@@ -235,13 +235,11 @@ given fMRI paradigm, a plan should be created and compared with the
 subject's brain activation during the scan using recognition methods. To
 use plan abandonment techniques, we need to discretize and formalize the
 fMRI and construct a expected plan based on the hypothesized paradigm
-using this formalization. To evaluate the compliance with a specific
-paradigm, we aim to use real-time fMRI methods to retrieve BOLD signals
-of brain regions that are supposed to be active in a particular time
-range. \textbf{HERE I THINK WE HAVE TO WRITE SOMETHING ABOUT THE THRESHOLD -- WE CAN TOLERATE SOME KIND OF NON-COMPLIANCE}. By doing so, it is possible to detect if a subject is following
-the paradigm given a specific stimulus type, such as visual or auditory
-stimulus. The brain state of each stimulus type will be mapped based on
-atlas from the literature. \textbf{For example, Brodmann areas 17, 18 and 19
+using this formalization. 
+To evaluate the compliance with a specific paradigm, we aim to use real-time fMRI methods to retrieve BOLD signals of brain regions that are supposed to be active in a particular time range. 
+In order to tolerate fluctuations of the BOLD signal, we aim to use the methods that detect non-compliance using a threshold from the expected activation \cite[Chap 4]{Sukthankar2014}. 
+By doing so, it is possible to detect if a subject is following the paradigm given a specific stimulus type, such as visual or auditory
+stimulus. The brain state of each stimulus type will be mapped based on atlas from the literature. \textbf{For example, Brodmann areas 17, 18 and 19
 will be mapped to cover visual stimulus with a state
 \emph{visual\_actv}. To cover motor activations, Brodmann area 4 will be mapped 
 with a state \emph{motor\_actv}. 
