@@ -55,7 +55,7 @@ contrib: RFP and FM develop the project, and RFP, ASH, FM, ARF, and AB wrote the
 
 bibliography: brainhack-report
 
-gigascience-ref: REFXXX
+gigascience-ref: \href{http://gigadb.org/dataset/100234}{doi:10.5524/100234}
 ...
 
 #Introduction
